@@ -8,19 +8,18 @@
 
 body {
     /* background-color: var(--navy); */
-    display: grid;
+    display: flex;
+    flex-direction: column;
     height: 100vh;
 }
 
-/* nav / header css */
-
-header {
-    background-color: darkslateblue;
-    padding: 2em;
-}
+/* nav/header css */
 
 nav {
-    color: var(--white);
+    background-color: red;
+    display: flex;
+    justify-content: flex-end ;
+    color: var(--slate);
     font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
 }
 
@@ -46,6 +45,10 @@ ol {
 
 main {
     background: coral;
+    display: block;
+    min-height: 100vh;
+    flex-grow: 500px;
+    flex-shrink: 100px;
 }
 
 

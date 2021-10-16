@@ -1,3 +1,6 @@
+/* playground using base grid layout from 10 modern layouts video*/
+
+
 body {
     display: grid;
     height: 100vh;
