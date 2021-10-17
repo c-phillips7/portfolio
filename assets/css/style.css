@@ -13,6 +13,19 @@ body {
     height: 100vh;
 }
 
+.text_center {
+    text-align: center;
+}
+
+.top_margin {
+    margin-top: 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 /* nav/header css */
 
 nav {
@@ -44,7 +57,6 @@ ol {
 /* main content */
 
 main {
-    /* background: coral; */
     display: block;
     min-height: 100vh;
     margin: auto;
@@ -58,22 +70,86 @@ main {
     align-items: center;
     justify-content: center;
     width: auto;
-    margin: 10px 0px 40px;
+    margin: 10px 0px 20px;
     font-size: 2em;
+    flex-grow: 1;
 }
 
-.subsection {
-    display: grid;
-    grid-template-columns: 3fr 2fr;
-    gap: 40;
+.numbering {
+    margin: 10px;
+    color: #64ffda;
+    font-family: 'Courier New', Courier, monospace
+}
+
+/* about me */
+
+.about_me {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
     font-size: 1.2em;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+/* potential alternative:
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 40; */
+
+.about_me_sub {
+    max-width: 50%;
+}
+
+@media screen and (max-width: 840px) {
+    .about_me_sub {
+       max-width: 80%;
+    }
+ }
 
 h1 {
     color: var(--light-slate);
     font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
     font-weight: bold;
+}
+
+img {
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+
+
+ 
+
+/* projects */
+
+.project {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: center;
+}
+
+.imgsize {
+    width: 300px;
+    height: 200px;
+}
+
+.project_sub {
+    /* flex: 0 0 40%; */
+    max-width: 40%;
+    margin-left: 20px;
+}
+
+@media screen and (max-width: 840px) {
+    .project_sub {
+       max-width: 80%;
+    }
+ }
+
+
+.subtext {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1em;
 }
 
 /* Sidebar */
@@ -91,7 +167,7 @@ h1 {
     width: 48x;
     position: fixed;
     bottom: 5em;
-    left: .5em;
+    left: 0em;
     right: auto;
     z-index: 10;
     color: var(--light-slate);
