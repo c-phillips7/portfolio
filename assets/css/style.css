@@ -10,7 +10,7 @@ body {
     background-color: var(--navy);
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .text_center {
@@ -32,7 +32,7 @@ a {
 
 a:visited {
     text-decoration: none;
-    color: var(--slate);
+    color: var(--light-slate);
 }
 
 .row {
@@ -118,6 +118,8 @@ main {
 
 .about_me_sub {
     max-width: 50%;
+    text-indent: 20px;
+
 }
 
 @media screen and (max-width: 840px) {
@@ -162,8 +164,19 @@ h2 {
 
 .project_sub {
     /* flex: 0 0 40%; */
-    max-width: 40%;
-    margin-left: 20px;
+    max-width: 45%;
+    margin-left: 30px;
+}
+
+.link {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.email {
+    color: var(--light-slate);
 }
 
 @media screen and (max-width: 840px) {
@@ -176,6 +189,24 @@ h2 {
 .subtext {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1em;
+}
+
+.spacing {
+    min-height: 20vh;
+}
+/* contact */
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-around;
+    flex-wrap: wrap;
+    font-size: 1.2em;
+    text-indent: 20px;
+    max-width: 80%;
+    margin-left: 12%;
+    /* max-width: 1000px; */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 /* Sidebar */
@@ -213,7 +244,18 @@ ul {
 /* footer */
 
 footer{
-    background-color: darkgreen;
-    text-align: center;
-    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: darkgreen; */
+    align-items: center;
+    height: auto;
+    min-height: 60px;
+    padding: 15px;
+}
+
+h3 {
+    color: var(--slate);
+    font-size: .9em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
