@@ -19,10 +19,13 @@ Live link:
 https://c-phillips7.github.io/portfolio/
 
 Screenshots:
+
 Mobile view:
+
 ![Screenshot](https://github.com/c-phillips7/portfolio/blob/master/assets/images/portfolio_mobile_view.png?raw=true)/
 
 Desktop view:
+
 ![Screenshot](https://github.com/c-phillips7/portfolio/blob/master/assets/images/portfolio_desktop_view.png?raw=true)/
 
 The assignment:
