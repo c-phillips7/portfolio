@@ -69,7 +69,6 @@ WHEN I resize the page or view the site on various screens and devices
 
 The following animation shows the web application's appearance and functionality:
 
-![portfolio demo](./Assets/02-advanced-css-homework-demo.gif)
 
 ## Review
 
