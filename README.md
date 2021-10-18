@@ -15,7 +15,15 @@ as there is only one application at this time, so this was not set up yet, but w
 *Note*
     Had issues with intial commit on github while I was starting (moslty playing with grid vs flex and general layout css). It would not let me push, and got frustrated enough that I opted to start a new repo to ensure my work was not lost. As a result my early commits are not recorded.
 
+Live link:
+https://c-phillips7.github.io/portfolio/
 
+Screenshots:
+Mobile view:
+![Screenshot](https://github.com/c-phillips7/portfolio/blob/master/assets/images/portfolio_mobile_view.png?raw=true)/
+
+Desktop view:
+![Screenshot](https://github.com/c-phillips7/portfolio/blob/master/assets/images/portfolio_desktop_view.png?raw=true)/
 
 The assignment:
 # 02 Advanced CSS: Portfolio
