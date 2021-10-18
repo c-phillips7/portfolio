@@ -48,6 +48,7 @@ a:visited {
 min-width: 120px;
 margin-right: 40px;
 font-weight: bold;
+margin-bottom: -20px;
 }
 
 nav {
@@ -126,15 +127,42 @@ main {
     grid-template-columns: 3fr 2fr;
     gap: 40; */
 
+
+
+
 .about_me_sub {
     max-width: 50%;
     text-indent: 20px;
-    margin: auto;
+    /* flex-grow: 1; */
+    margin-top: auto;
+    margin-bottom: auto;
     /* text-align: center; */
     /* vertical-align: middle; */
     /* line-height: 90px; */
+}
 
 
+.profile {
+     max-width: 400px;
+}
+
+@media screen and (max-width: 500px){
+    .profile {
+        display: flex;
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .about_me_sub {
+    flex-grow: 2;
+    }
+    .profile {
+    flex-grow: 5;
+    }
 }
 
 @media screen and (max-width: 840px) {
@@ -165,12 +193,16 @@ img {
 }
 
 .imgsize {
-    width: 300px;
-    height: 200px;
+    /* flex-grow: 1;
+    flex-shrink: 1; */
+    max-height: 200px;
+    min-width: 300px;
+    min-height: 200px;
 }
 
 h2 {
     color: var(--light-slate);
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
 
 }
 
